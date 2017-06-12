@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-md-6">
+    <div style="display: block;">
+      <canvas baseChart width="400" height="400"
+        [datasets]="dataDisplayed"
+        [labels]="labels"
+        [options]="options"
+        [colors]="colors"
+        [legend]="legend"
+        [chartType]="type"
+        (chartHover)="chartHovered($event)"
+        (chartClick)="chartClicked($event)"
+      ></canvas>
+    </div>
+  </div>
+</div>
