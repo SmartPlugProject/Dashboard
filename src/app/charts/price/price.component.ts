@@ -3,11 +3,11 @@ import { Component } from '@angular/core';
 import { SensorSelectorService } from '../../sensor-selector/sensor-selector.service';
 
 @Component({
-  selector: 'chart-energy',
-  templateUrl: './energy.component.html',
-  styleUrls: ['./energy.component.css']
+  selector: 'chart-price',
+  templateUrl: './price.component.html',
+  styleUrls: ['./price.component.css']
 })
-export class EnergyComponent {
+export class PriceComponent {
   data: Array<any>;
 
   dataDisplayed: Array<any>;
@@ -20,9 +20,9 @@ export class EnergyComponent {
 
   colors: Array<any> = [
     { // grey
-      backgroundColor: 'rgba(0,59,101,0.4)',
-      borderColor: 'rgba(0,59,101,1)',
-      pointBackgroundColor: 'rgba(148,159,177,1)',
+      backgroundColor: 'rgba(86,200,113,0.4)',
+      borderColor: 'rgba(86,200,113,1)',
+      pointBackgroundColor: 'rgba(86,200,113,1)',
       pointBorderColor: '#fff',
       pointHoverBackgroundColor: '#fff',
       pointHoverBorderColor: 'rgba(148,159,177,0.8)'

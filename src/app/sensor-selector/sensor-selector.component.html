@@ -3,6 +3,6 @@
     {{selectedSensor}}
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a *ngFor="let name of names; let i = index" class="dropdown-item" href="#" (click)="selectSensor(i)">{{name}}</a>
+    <a *ngFor="let sensor of sensors" class="dropdown-item" href="#" (click)="selectSensor(sensor)">{{sensor.name}}</a>
   </div>
 </div>
